@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 40vh;
+    background-image:url(picture/Background.jpg);
+    background-size: 100%;
+    background-image: center;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+main{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(picture/SMCC.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.About{
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    color: #fff;
+}
